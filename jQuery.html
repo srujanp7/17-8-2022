@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Dialog functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+      <style type="text/css">
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:rgb(250, 4, 209);
+            border: 1px solid #131312;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+      </style>
+      <script type = "text/javascript">
+          $(document).ready(function(){
+              $("#div").dialog({
+                  autoOpen: false,
+               });
+              $("#button").click(function () {
+                  $("#div").dialog("open");
+              });
+          });
+      </script>
+   </head>
+   
+   <body>
+      <div id = "div" title="Open your favourite site:">
+          
+           <a href="http://www.google.com" target="_blank">Google</a><hr/>
+           <a href="http://www.facebook.com" target="_blank">facebook</a><hr/>
+           <a href="http://www.gmail.com" target="_blank">Gmail</a><hr/>
+           <a href="http://www.twitter.com" target="_blank">twitter</a><hr/>
+           
+      </div>
+      <button id = "button">Click Here..</button>
+   </body>
+</html>
